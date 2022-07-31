@@ -163,6 +163,7 @@
           "e8e07028-beb6-4533-ae58-25b2d83213ec"
         ],
         "settings": {
+          "heading": "Instagram",
           "section_height": "medium"
         }
       },
@@ -261,7 +262,23 @@
       "contactForm": {
         "type": "contactForm",
         "settings": {
-          "isOrdernumberEnabled": true
+          "isOrdernumberEnabled": true,
+          "businessName": false
+        }
+      },
+      "contact-wholesale": {
+        "type": "contact-wholesale",
+        "settings": {
+          "businessName": true,
+          "business-types": "Retail Store, e-commerce, Warehouse"
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "settings": {
+          "heading": "Questions",
+          "question": "How long will shipping take?!",
+          "answer": "Usually it takes 3-5 business days!!"
         }
       }
     },
