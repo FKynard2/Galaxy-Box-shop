@@ -36,11 +36,11 @@
            {%if section.settings.businessName %}
               <div class="grid grid--half-gutters">
                 <div class="grid__item medium-up--one-half">
-                  <label for="businessName">Business</label>
+                  <label for="businessName">{{'customization.wholesale.business' | t }}</label>
                   <input type="text" id="businessName" name="contact[business name]"/>
                 </div>
                 <div class="grid__item medium-up--one-half">
-                  <label for="website">Website</label>
+                  <label for="website">{{'customization.wholesale.website_name' | t }}</label>
                   <input type="text" id="website" name="contact[website]"/>
                 </div>
               </div>
@@ -56,7 +56,7 @@
             {% comment %} This will give you the option to add a , in the options box for new options {% endcomment %}
               {% unless section.settings.business-types == blank %}
               {% assign business-types = section.settings.business-types | split: ',' %}
-                <label for="{{ formId }}-business-type">Type of Business</label>
+                <label for="{{ formId }}-business-type">{{'customization.wholesale.business_type' | t }}</label>
                 <select id="{{ formId }}-business-type" name="contact[Type of Business]" >
                 {% for type in business-types %}
                   <option value="{{type}}">{{type}}</option>  
