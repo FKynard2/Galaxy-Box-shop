@@ -10,7 +10,7 @@
         </div>	
     </div>
     {% elsif block.type == 'headline' %}
-        <h2>{{block.settings.title}}</h2> 
+        <h2 class='margin-top'>{{block.settings.title}}</h2> 
     {% endif %}
 {% endfor %}
 
@@ -31,21 +31,21 @@
                 "type": "QA",
                 "name": "Question/Answer",
                 "settings": [
-                            {
-                                "type": "text",
-                                "label": "title (internal only)",
-                                "id": "title"
-                            }, 
-                            {
-                                "type": "text",
-                                "label": "customer questions",
-                                "id": "question"
-                            }, 
-                            {
-                                "type": "text",
-                                "label": "customer answers",
-                                "id": "answer"
-                            }
+                    {
+                        "type": "text",
+                        "label": "title (internal only)",
+                        "id": "title"
+                    }, 
+                    {
+                        "type": "text",
+                        "label": "customer questions",
+                        "id": "question"
+                    }, 
+                    {
+                        "type": "text",
+                        "label": "customer answers",
+                        "id": "answer"
+                    }
 
                 ]
 

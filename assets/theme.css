@@ -9167,3 +9167,6 @@ hr {
   max-height: 100vh;
   padding: 1em;
 }
+.margin-top {
+  margin-top: 20px;
+}
