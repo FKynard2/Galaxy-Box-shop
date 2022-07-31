@@ -2444,6 +2444,9 @@ textarea {
   display: inline-block;
   width: auto;
 }
+.contact-btn {
+  margin-left: 47%;
+}
 
 /*================ Single field forms ================*/
 .form-single-field {

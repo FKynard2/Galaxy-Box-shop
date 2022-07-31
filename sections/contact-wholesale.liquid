@@ -31,10 +31,7 @@
               {%- endif -%}
             </div>
           </div>
-           {%if section.settings.isOrdernumberEnabled %}
-              <label for="orderNumber">Order Number</label>
-              <input type="text" id="orderNumber" name="contact[order number]"/>
-           {%endif%}
+         
 
            {%if section.settings.businessName %}
               <div class="grid grid--half-gutters">
@@ -56,19 +53,20 @@
           <label for="{{ formId }}-phone">{{ 'contact.form.phone' | t }}</label>
           <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
           
-            {%if section.settings.businessName %}
-              
-              <label for="businessType">Business Type</label>
+            {% comment %} This will give you the option to add a , in the options box for new options {% endcomment %}
+              {% unless section.settings.business-types == blank %}
+              {% assign business-types = section.settings.business-types | split: ',' %}
+                <label for="{{ formId }}-business-type">Type of Business</label>
+                <select id="{{ formId }}-business-type" name="contact[Type of Business]" >
+                {% for type in business-types %}
+                  <option value="{{type}}">{{type}}</option>  
+                {% endfor %}
+                </select>
+              {% endunless %}
 
-              <select name="cars" id="cars">
-                <option value="Retail">Retail</option>
-                <option value="Bigbox">Big Box</option>
-                <option value="Department">Department</option>
-                <option value="Warehouse">Warehouse</option>
-              </select>
+
                 
-                
-           {%endif%}
+           
 
           <label for="{{ formId }}-message">{{ 'contact.form.message' | t }}</label>
           <textarea rows="10" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
@@ -81,18 +79,16 @@
           {
             "name": "contact form",
             "settings": [
-          
-              {
-                "type": "checkbox",
-                "id": "isOrdernumberEnabled",
-                "label": "Enable Order Numbers",
-                "default": false
-              },
               {
                 "type": "checkbox",
                 "id": "businessName",
                 "label": "Enable Wholesale",
                 "default": false
+              },
+              {
+                "type": "text",
+                "label": "Business Types (Comma-Separated)",
+                "id": "business-types"
               }
                
             ]
