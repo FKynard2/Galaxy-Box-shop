@@ -194,6 +194,7 @@
 {% if template == 'product' and product.metafields.inventory.ShappifyHidden or product.type contains '_HIDDEN_' %}<meta name='robots' content='noindex'>{% endif %}
 {%- render 'bold-options-hybrid' -%}
 {%- render 'bold-common' -%}
+  {% render 'judgeme_core' %}
 </head>
 
 <body class="template-{{ request.page_type | handle }}">

@@ -9170,3 +9170,6 @@ hr {
 .margin-top {
   margin-top: 20px;
 }
+.jdgm-histogram__bar-content {
+  background-color: #d20000 !important;
+}

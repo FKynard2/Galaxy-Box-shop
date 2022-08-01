@@ -143,14 +143,16 @@
       <div class="product-single__meta">
 
         <h1 class="product-single__title">{{ product.title }}</h1>
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+
          
          
          <script>window.performance.mark('debut:product:title_visible');</script>
 
          {% unless isAffiliateProduct %}
-        
 
-          <div>&#11088;&#11088;&#11088;&#11088;&#11088;</div>
 
 
           <div class="product__price">
@@ -306,7 +308,11 @@
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
         {% endif %}
     </div>
-  </div>
+  
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+</div>
 </div>
 
 {% unless product == empty %}
