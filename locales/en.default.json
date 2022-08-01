@@ -428,6 +428,12 @@
     },
     "affiliate_page": {
       "amazon_btn": "Find on Amazon"
+    },
+    "products": {
+      "description": "Description",
+      "details": "Details",
+      "shipping": "Shipping",
+      "shipping_text": "Your order will be shipped the same or next business day."
     }
   }
 }
