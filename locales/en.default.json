@@ -433,7 +433,7 @@
       "description": "Description",
       "details": "Details",
       "shipping": "Shipping",
-      "shipping_text": "Your order will be shipped the same or next business day."
+      "shipping_text": "Your order will be shipped the next, or next, business day. During the sale item may be a slightly longer duration."
     }
   }
 }

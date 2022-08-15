@@ -195,6 +195,8 @@
 {%- render 'bold-options-hybrid' -%}
 {%- render 'bold-common' -%}
   {% render 'judgeme_core' %}
+
+  {% if content_for_header contains 'rio.pwztag.com' %}{% render 'productwiz-rio', product: product, shop: shop, installGuard: true %}{% endif %}
 </head>
 
 <body class="template-{{ request.page_type | handle }}">

@@ -41,7 +41,7 @@
         "type": "feature-row",
         "settings": {
           "image": "shopify:\/\/shop_images\/homepage_1.jpg",
-          "layout": "left",
+          "layout": "right",
           "title": "Image with text",
           "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
           "button_label": "",
@@ -207,28 +207,6 @@
           "show_locale_selector": true
         }
       },
-      "16478101380c0258b0": {
-        "type": "feature-row",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/instagram_3.jpg",
-          "layout": "right",
-          "title": "Image with text",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
-      "16478101976ab6a2eb": {
-        "type": "feature-row",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/homepage_3.jpg",
-          "layout": "left",
-          "title": "Image with text",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
       "collection-template": {
         "type": "collection-template",
         "settings": {
@@ -334,15 +312,68 @@
         "settings": {
           "heading": "Questions"
         }
+      },
+      "1660482839963ebede": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/homepage_1.jpg",
+          "layout": "right",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-row-aboutus": {
+        "type": "feature-row-aboutus",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/pexels-dellon-thomas-3674236.jpg",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-row-2": {
+        "type": "feature-row-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/pexels-omar-lopez-1182826.jpg",
+          "layout": "right",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-row-3": {
+        "type": "feature-row-3",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/pexels-james-wheeler-3936144.jpg",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-row-4": {
+        "type": "feature-row-4",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/pexels-tiger-lily-4481259.jpg",
+          "layout": "right",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
       "hero-1",
-      "feature-row",
-      "16478101380c0258b0",
-      "16478101976ab6a2eb",
       "quotes",
-      "image-bar"
+      "image-bar",
+      "1660482839963ebede"
     ]
   },
   "presets": {
